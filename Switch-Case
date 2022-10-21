@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+
+    Scanner ler = new Scanner(System.in);
+    int opção,n1,n2;
+    
+    float soma,sub,mult,div;
+    
+    System.out.println("Digite um Número :");
+     n1 = ler.nextInt();
+    
+    System.out.println("Digite outro Número :");
+     n2 = ler.nextInt();
+     
+     
+    System.out.println("");
+    System.out.println("Escolha uma Opção");
+    System.out.println("[1] Soma ");
+    System.out.println("[2] Subtração ");
+    System.out.println("[3] Multiplição");
+    System.out.println("[4] Divisão");
+    opção = ler.nextInt();
+    
+    
+    System.out.println("");
+    
+
+    
+    switch (opção) {
+            
+            
+        case 1 :
+            soma = n1 + n2;
+            System.out.println( "A Soma foi: " + soma);
+            break;
+        case 2 :
+            sub = n1 - n2;
+            System.out.println("A subtração foi: "  + sub );
+            break;
+        case 3 :
+            mult = n1 * n2;
+            System.out.println("A multiplição foi: " + mult);
+            break;
+        case 4 :
+            div = n1 / n2;
+            System.out.println("A divisão foi: "  + div);
+            break;
+    }
+    
+
+	}
+}
